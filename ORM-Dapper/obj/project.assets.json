@@ -2192,6 +2192,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Dapper >= 2.1.4",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
       "MySql.Data >= 8.1.0"
     ]
@@ -2236,6 +2237,10 @@
           "Dapper": {
             "target": "Package",
             "version": "[2.1.4, )"
+          },
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
