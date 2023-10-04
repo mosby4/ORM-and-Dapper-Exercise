@@ -27,7 +27,14 @@ namespace ORM_Dapper
             {
                 Console.WriteLine( $"{item.DepartmentID } {item.Name}");
             }
+            var repo = new DapperProductRepository(Connection);
+            var products = repo.GetAllProducts();
 
+            foreach (var item in products)
+            {
+                Console.WriteLine($"{item.productID} {item.name} {item.price} {item.catagoryID}" +
+                    $"{item.onSale} {item.StockLevel}");
+            }
         }
     }
 }
