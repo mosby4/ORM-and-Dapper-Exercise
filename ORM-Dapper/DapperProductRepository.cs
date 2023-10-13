@@ -17,7 +17,7 @@ namespace ORM_Dapper
 
         public void CreateProduct(string name, double price, int categoryID)
         {
-            _connection.Execute("INSERT INTO porducts (name, price, categoryID) VALUES ( @name, @price, @categoryID);",
+            _connection.Execute("INSERT INTO products (name, price, categoryID) VALUES ( @name, @price, @categoryID);",
                 new {name = name, price = price, categoryID = categoryID});
         }
 
